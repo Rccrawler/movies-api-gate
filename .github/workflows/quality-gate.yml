@@ -33,6 +33,7 @@ jobs:
             DB_PASS: postgres
             DB_NAME: movies
             DB_SSL: "false"
+            DB_SYNC: "true"
 
         steps:
             - name: Checkout

@@ -17,10 +17,10 @@ import { MoviesModule } from './movies/movies.module';
       password: process.env.DB_PASS,
       database: process.env.DB_NAME,
       autoLoadEntities: true,
-      synchronize: false,
+      synchronize: process.env.DB_SYNC === 'true',
     }),
 
     MoviesModule,
   ],
 })
-export class AppModule {}
+export class AppModule { }
