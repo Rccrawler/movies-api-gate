@@ -41,4 +41,3 @@ describe('MoviesService', () => {
     expect(result).toEqual(data);
   });
 });
-
